@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: normal;
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 180px;
+  border-bottom: 1px solid #4D556233;
+  margin-bottom: 20px;
+  background-image: url("img/bg-pattern.png");
+  background-color: #E5E7EB40;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 40px;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.items__descrip {
+  font-weight: 600;
+  border-radius: 8px;
+  overflow: hidden;
+
+  div {
+    background-color: #263FA910;
+  }
+}
+
+.cell {
+  border-bottom: 1px solid #E5E7EB;
+  padding: 1rem;
+}
+
+.cell__cta {
+  padding: 1rem;
+  color: #263FA9;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cell__center {
+  text-align: center;
+}
+
+.cell__grid {
+  display: grid;
+  grid-template-rows: 90px repeat(7, 45px) 60px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.cell__spacing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.cell__popular {
+  background-color: #121826;
+  color: #FFF;
+  border-radius: 14px;
+}
+
+.cell__cta__popular {
+  padding: 1rem;
+  color: #FFF;
+  background-color: #7C4F1E;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.small__purple {
+  color: #263FA9;
+  font-weight: 600;
+}
+
+.small__purple__fill {
+  background-color: #263FA9;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.hidden__cell__1,
+.hidden__cell__2 {
+  display: none;
+}
+
+@media screen and (width>=1023px) {
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hidden__cell__1 {
+    display: initial;
+  }
+}
+
+@media screen and (width>=1279px) {
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .hidden__cell__2 {
+    display: initial;
+  }
+}
